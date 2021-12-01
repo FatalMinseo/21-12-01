@@ -9,52 +9,52 @@ public class Ex02_1 {
 		ArrayList<String> arrayList = new ArrayList<String>();
 		int i = 0;
 		while (i != 4) {
-			System.out.println("[1] ³ë·¡Ãß°¡ [2] ³ë·¡»èÁ¦ [3] ³ë·¡°Ë»ö [4] Á¾·á");
-			System.out.print("½ÇÇà½ÃÅ³ ¸Þ´º : ");
+			System.out.println("[1] ë…¸ëž˜ì¶”ê°€ [2] ë…¸ëž˜ì‚­ì œ [3] ë…¸ëž˜ê²€ìƒ‰ [4] ì¢…ë£Œ");
+			System.out.print("ì‹¤í–‰ì‹œí‚¬ ë©”ë‰´ : ");
 			i = sc.nextInt();
-			if (i == 1) {
+			if (i == 1) {						// 1ì„ ì„ íƒí•˜ë©´ ë…¸ëž˜ì¶”ê°€
 				// sc.nextLine();
-				System.out.print("Ãß°¡ÇÒ ³ë·¡Á¦¸ñ ÀÔ·Â >> ");
+				System.out.print("ì¶”ê°€í•  ë…¸ëž˜ì œëª© ìž…ë ¥ >> ");
 				sc.nextLine();
 				String a = sc.nextLine();
 				arrayList.add(a);
-				System.out.println("=====List=====");
+				System.out.println("=====List=====");		// ì¶”ê°€ í›„ ë¦¬ìŠ¤íŠ¸
 				for (int j = 0; j < arrayList.size(); j++) {
 					System.out.println((j + 1) + ". " + arrayList.get(j));
 					if (j == arrayList.size() - 1) {
 						System.out.println("==============");
 					}
 				}
-			} else if (i == 2) {
+			} else if (i == 2) {					// 2ë¥¼ ì„ íƒí•˜ë©´ ë…¸ëž˜ì‚­ì œ
 				System.out.println("=====List=====");
-				for (int j = 0; j < arrayList.size(); j++) {
+				for (int j = 0; j < arrayList.size(); j++) {	
 					System.out.println((j + 1) + "." + arrayList.get(j));
 					if (j == arrayList.size() - 1) {
 						System.out.println("==============");
 					}
-				}
-				System.out.print("»èÁ¦ÇÒ ³ë·¡¹øÈ£ ÀÔ·Â >> ");
+				}						// ë¦¬ìŠ¤íŠ¸ ë³´ì—¬ì£¼ê³ 
+				System.out.print("ì‚­ì œí•  ë…¸ëž˜ë²ˆí˜¸ ìž…ë ¥ >> ");
 				int b = sc.nextInt();
-				System.out.println(arrayList.get(b - 1) + "ÀÌ(°¡) »èÁ¦ µÇ¾ú½À´Ï´Ù.");
-				arrayList.remove(b - 1);
+				System.out.println(arrayList.get(b - 1) + "ì´(ê°€) ì‚­ì œ ë˜ì—ˆìŠµë‹ˆë‹¤.");
+				arrayList.remove(b - 1);			// ë²ˆí˜¸ ì„ íƒ í›„ ì‚­ì œ
 				
-			} else if (i == 3) {
+			} else if (i == 3) {					// 3ì„ ì„ íƒí•˜ë©´ ë…¸ëž˜ê²€ìƒ‰
 				sc.nextLine();
-				System.out.print("¼±ÅÃÇÒ ³ë·¡Á¦¸ñ ÀÔ·Â >> ");
+				System.out.print("ì„ íƒí•  ë…¸ëž˜ì œëª© ìž…ë ¥ >> ");
 				String c = sc.nextLine();
 				for (int k = 0; k < arrayList.size(); k++) {
 					if (arrayList.get(k).equals(c)) {
-						System.out.println((k + 1) + "¹øÂ°¿¡ " + arrayList.get(k) + "ÀÌ(°¡) ÀÖ½À´Ï´Ù.");
+						System.out.println((k + 1) + "ë²ˆì§¸ì— " + arrayList.get(k) + "ì´(ê°€) ìžˆìŠµë‹ˆë‹¤.");
 						break;
 					} else if (k==arrayList.size()-1) {
-						System.out.println("ÀÏÄ¡ÇÏ´Â ³ë·¡°¡ ¾ø½À´Ï´Ù.");
+						System.out.println("ì¼ì¹˜í•˜ëŠ” ë…¸ëž˜ê°€ ì—†ìŠµë‹ˆë‹¤.");
 					}
 				}
-			} else if (i == 4) {
-				System.out.println("½Ã½ºÅÛ Á¾·á");
+			} else if (i == 4) {					// 4ë¥¼ ì„ íƒí•˜ë©´ ì‹œìŠ¤í…œ ì¢…ë£Œ
+				System.out.println("ì‹œìŠ¤í…œ ì¢…ë£Œ");
 				break;
 			} else if (i != 1 && i != 2 && i != 3 && i != 4) {
-				System.out.println("´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+				System.out.println("ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 			}
 			System.out.println();
 		}
